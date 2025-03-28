@@ -1,70 +1,58 @@
 <!DOCTYPE html>
-
 <html lang="es">
-
 <head>
-
     <meta charset="UTF-8">
-    <title>Barbería Alura</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="reset.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi CV</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-
     <header>
-        <div class="caja">
-            <h1><img src="imagenes/logo.png"></h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="productos.html">Productos</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
+        <h1 id="nombre">Diego Catalán</h1>
     </header>
 
-    <img class="banner" src="banner/banner.jpg">
-    <main>
-        <section class="principal">
+    <section id="perfil">
+        <h2>Perfil</h2>
+        <p id="descripcion">Estudiante de Ingeniería en Sistemas. Comprometido con la integración de la creatividad en soluciones tecnológicas. Proactivo, dispuesto a aprender todos los días. Apasionado en el manejo de datos y resolución de problemas.</p>
+    </section>
+    <section id="habilidades">
+      <h2>Habilidades</h2>
+      <div class="skill">
+        <span>JavaScript</span>
+        <div class="progress-bar">
+            <div class="progress" id="js-progress" style="width: 50%;"></div>
+        </div>
+    </div>
+    <div class="skill">
+        <span>HTML</span>
+        <div class="progress-bar">
+            <div class="progress" id="html-progress" style="width: 30%;"></div>
+        </div>
+    </div>
+    <div class="skill">
+        <span>CSS</span>
+        <div class="progress-bar">
+            <div class="progress" id="css-progress" style="width: 30%;"></div>
+        </div>
+    </div>
+  </section>
 
-            <h2 class="tituloPrincipal">Sobre la Barbería Alura</h2>
-            <img class="utensilios" src="imagenes/utensilios[1].jpg" alt="Imagen de utencilios" >
+    <section id="experiencia">
+        <h2>Experiencia</h2>
+        <ul>
+            <li>Estudiante Dojo .Net (2025 - presente)</li>
+            <li>Maquetador (2023 - 2023)</li>
+        </ul>
+    </section>
 
-            <p>Ubicada en el corazón de la ciudad, la <strong>Barbería Alura</strong> trae para el mercado lo que hay de
-                mejor para su cabello y barba. Fundada en 2020, la Barbería Alura ya es destaque en la ciudad y
-                conquista nuevos clientes diariamente.</p>
+    
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Email: <span id="email">dcatalana4@miumg.edu.gt</span></p>
+        <button class="contact-btn" onclick="enviarCorreo()">Contactar</button>
+    </section>
 
-            <p id="mision"><em>Nuestra misión es: <strong>"Proporcionar autoestima y calidad de vida a nuestros
-                        clientes"</strong>.</em></p>
-
-            <p>Ofrecemos profesionales experimentados que están constantemente observando los cambios y movimiento en el
-                mundo de la moda, para así ofrecer a nuestros clientes las últimas tendencias. El atendimiento posee un
-                padrón de excelencia y agilidad, garantizando calidad y satisfacción de nuestros clientes.</p>
-
-        </section>
-
-        <section class="diferenciales">
-
-            <h3 class="tituloPrincipal">Diferenciales</h3>
-
-            <ul>
-                <li class="items">Atención personalizada a los clientes</li>
-                <li class="items">Espacio diferenciado</li>
-                <li class="items">Localización</li>
-                <li class="items">Profesesionales calificados</li>
-            </ul>
-
-            <img src="diferenciales/diferenciales.jpg" class="imagenDiferenciales">
-
-        </section>
-    </main>
-    <footer>
-        <img src="imagenes/logo-blanco.png">
-        <p class="copyright">&copy Copyright Barbería Alura - 2020</p>
-    </footer>
-
+    <script src="script.js"></script>
 </body>
-
 </html>
+
