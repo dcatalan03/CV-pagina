@@ -16,5 +16,12 @@ document.addEventListener("DOMContentLoaded", function () {
     setTimeout(() => {
         document.querySelectorAll("section").forEach(sec => sec.style.opacity = "1");
     }, 500);
+    function enviarCorreo() {
+        let email = "dcatalana4@miumg.edu.gt";
+        let asunto = "Consulta sobre tu servicio";
+        let cuerpo = "Hola, me gustaría obtener más información sobre:  ";
 
+        let mailtoLink = `mailto:${email}?subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(cuerpo)}`;
+        window.location.href = mailtoLink;
+    }
     
