@@ -5,7 +5,10 @@ body {
     text-align: center;
     padding: 20px;
 }
-
+.dark-mode {
+    background: linear-gradient(135deg, #121212, #1f1f1f);
+    color: white;
+}
 header {
     background: rgba(0, 0, 0, 0.3);
     padding: 20px;
@@ -84,4 +87,62 @@ li {
 #contacto:hover {
     background: rgba(0, 0, 0, 0.5);
     transition: background 0.3s ease;
+}
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#modo-btn {
+    background-color: black;
+    color: white;
+    position: absolute;
+    left: 1%; /* Ajusta según necesites */
+    top: 1%; /* Ajusta según necesites */
+    padding: 0.5% 0.5%;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dark-mode #modo-btn {
+    background-color: #007bff;
+    color: white;
+    position: absolute;
+    left: 1%; /* Ajusta según necesites */
+    top: 1%; /* Ajusta según necesites */
+    padding: 0.5% 1%;
+   
+   
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.contact-btn:active {
+    transform: scale(0.95);
 }
