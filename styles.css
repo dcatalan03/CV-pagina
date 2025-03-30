@@ -100,7 +100,7 @@ button {
 #modo-btn {
     background-color: black;
     color: white;
-    position: absolute;
+    position: fixed;
     left: 1%; /* Ajusta según necesites */
     top: 1%; /* Ajusta según necesites */
     padding: 0.5% 0.5%;
@@ -114,7 +114,7 @@ button {
 .dark-mode #modo-btn {
     background-color: #007bff;
     color: white;
-    position: absolute;
+    position: fixed;
     left: 1%; /* Ajusta según necesites */
     top: 1%; /* Ajusta según necesites */
     padding: 0.5% 1%;
@@ -129,6 +129,7 @@ button {
     background-color: #007bff;
     color: white;
     border: none;
+   
     padding: 15px 30px;
     font-size: 18px;
     font-weight: bold;
